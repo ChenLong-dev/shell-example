@@ -73,7 +73,7 @@ function scp_file_to_remote()
   # 将命令参数中的远程服务器加入到远程服务器地址列表
   local remote_host_list=${REMOTE_HOST_LIST}
   if [ x${remote_host} = x"" ]; then
-    echo -e "\033[31m ###  remote_host is None!  ### \033[0m"
+    echo -e "\033[31m ###  remote_host is none!  ### \033[0m"
     print_help
     exit 1
   else
